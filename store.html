@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstore - Battery Acid Energy Drink</title>
+    <style>
+        .sidebar {
+            background-color: #333;
+            color: white;
+            width: 20%;
+            float: left;
+        }
+
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .product {
+            width: calc(33.33% - 20px);
+            margin-bottom: 40px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sortOptions{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header"></div>
+
+    <div class="container">
+
+        <div class="sortOptions">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="lowToHigh">Price - Low to High</option>
+                <option value="highToLow">Price - High to Low</option>
+            </select>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Price: $2.99</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Price: $3.49</p>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Price: $2.79</p>
+            </div>
+            <div class="product">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Price: $2.99</p>
+            </div>
+            <div class="product">
+                <img src="product5.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>Price: $3.29</p>
+            </div>
+            <div class="product">
+                <img src="product6.jpg" alt="Product 6">
+                <h3>Product 6</h3>
+                <p>Price: $3.19</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
