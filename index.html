@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Acid</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="css/darkMode.css">
+    <style>
+        .product {
+            display: flex;
+            overflow: hidden;
+
+            /* text-align: right; */
+            margin: 1% 0;
+            padding: 0.5%;
+            border: 1px solid #1e1e1e;
+            box-shadow: 0 0 1% #723232;
+            font-family: 'ITC Avant Garde Gothic', sans-serif;
+            width: 100%;
+        }
+
+        .product img {
+            width: 100%;
+            object-fit: contain;
+            /* visibility: hidden; */
+        }
+
+        .product .banner__overlay {
+            display: inline-block;
+            opacity: 80%;
+            position: absolute;
+            right: calc(2% + 3%);
+            /*padding is 2% */
+            top: auto;
+            padding-top: 2%;
+            left: calc(2% + 3%);
+            line-height: normal;
+        }
+
+        .product .banner__overlay h1 {
+            font-size: 9vw;
+        }
+
+        .product .banner__overlay p {
+            font-size: 1.3vw;
+            position: absolute;
+            left: 55%;
+        }
+
+        .product .banner__overlay a {
+            font-size: 1.5vw;
+            position: absolute;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: .5% .9%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <br>
+    <div class="container">
+        <div class="product" style="text-align: right;">
+            <img src="assets/banner1.png">
+            <div class="banner__overlay">
+                <h1>THE FUTURE IS BULLETPROOF</h1>
+                <p style="color: #203F98;"><b>Blueberries and Raspberries</b>, with a touch of <b>Pomegranate</b>. Purchase the iconic <b>Battery Acid Blue
+                        Raspberry</b>.</p>
+                <a href="store.html" id="shop" style="right: 8%; bottom: -33%; background-color: #203F98;">
+                    Go To Store</a>
+            </div>
+        </div>
+
+        <div class="product" style="text-align: right;">
+            <img src="assets/banner2_24fps.gif">
+            <div class="banner__overlay">
+                <h1>THE AFTERMATH IS SECONDARY</h1>
+                <p style="color: #f8ffb0;"><b>The Original Flavor</b>. Learn more about <b>Battery Acid</b>, a wholly owned subsidiary of <b>Better Living Industries</b>.</p>
+                <a href="aboutPage.html" id="shop" style="left: 8%; bottom: -20%; background-color: #8C9529;">
+                    About Battery Acid</a>
+            </div>
+        </div>
+
+        <div class="product" style="text-align: left;">
+            <img src="assets/banner3.png">
+            <div class="banner__overlay">
+                <h1>HAVE YOU SMILED TODAY?</h1>
+                <p style="color: #ffb8be; left:0; right:55%;">Try our <b>New Flavors</b>, <b>Battery Acid Cherry Lime</b> and <b>Battery Acid Plums Peach</b>.</p>
+                <a href="store.html" id="shop" style="right: 8%; bottom: -30%; background-color:#8F1922;">
+                    Go To Store</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
