@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<style>
+</style>
+
+<head>
+    <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        a{
+            text-decoration:none;
+        }
+        #submit_button{
+            padding: 10px;
+            border-style: none;
+            border-radius: 2vw;
+            background-color: #fa7777;
+            color: var(--txcolor);
+        }
+        .textbox{
+            width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <form class="signUpForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
+            <h1>Sign In</h1>
+            <p>Please enter your credentials to continue.</p>
+            <label for="email"><b>Email</b></label><br>
+            <input class="textbox" type="text" placeholder="Enter Email" name="email" required>
+            <br>
+            <label for="psw"><b>Password</b></label><br>
+            <input class="textbox" type="password" placeholder="Enter Password" name="psw" required id="password">
+            <br>
+            <label for="psw-repeat"><b>Repeat Password</b></label><br>
+            <input class="textbox" type="password" placeholder="Repeat Password" name="psw-repeat" required id="password-repeat">
+            <br>
+            <label for="accept_conditions">By creating an account you agree to our <a href="terms_and_conditions.html"
+                style="color:dodgerblue">Terms and Conditions</a>.<br></label>
+            <input type="radio" name="accept_conditions" value="true" required> I Accept &emsp;
+            <input type="radio" name="accept_conditions" value="false"> I Do Not Accept
+            <br>
+            <input id="submit_button" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function validateForm(){
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("password-repeat").value;
+            console.log(password,confirmPassword);
+            if(password==confirmPassword)
+                return true;
+            else{
+                alert("Your passwords do not match.")
+                return false;
+            }
+        }
+    </script>
+
+    <div class="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

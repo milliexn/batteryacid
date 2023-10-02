@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/store.css">
+</head>
+
+<body>
+
+    <div class="header"></div>
+
+    <div class="container">
+        
+        <!-- <header>
+            <div class="shopping">
+                <img src="assets/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header> -->
+        <div class="shopping-cart">
+            <img src="assets/shopping.svg">
+            <span class="quantity">0</span>
+        </div>
+        <div class="sortOptions">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option selected value="recommended">Recommended</option>
+                <option value="lowToHigh">Price - Low to High</option>
+                <option value="highToLow">Price - High to Low</option>
+            </select>
+
+            <button onclick="sortData()">Sort</button>
+        </div>
+
+        <div class="products">
+            <!-- <div class="product">
+                <img src="product9.jpg" alt="Product 9">
+                <h2>Product 9</h2>
+                <p class="price">Price: $53.19</p>
+                <p class="about">About:</p>
+                <button>
+            </div> -->
+        </div>
+    </div>
+    <div class="cart">
+        <h1>Cart</h1>
+        <ul class="listCart">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeCart">Close</div>
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+<script src="js/store.js"></script>
+
+</html>

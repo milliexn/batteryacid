@@ -1,0 +1,72 @@
+<style>
+    .footer {
+        background-color: var(--bg2color);
+        color: var(--txcolor);
+        padding: 2vh 10% 2vh 10%;
+        font-size: clamp(1vw, 2vw, 1vh);
+        line-height: 170%;
+    }
+
+    .scrollUp {
+        background-color: #c45050;
+        border: var(--txcolor);
+        color: var(--txcolor);
+        padding: min(1vh, 1vw);
+        border-radius: min(3vh, 3vw);
+        font-size: min(2vh, 2vw);
+    }
+
+    .footNavBar a {
+        color: var(--txcolor);
+        text-decoration: none;
+        /*removes underline */
+    }
+
+    .footNavBar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #information {
+        /* align-items: center; */
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #footerMenu {
+        list-style: none;
+    }
+
+    .scrollUp:hover {
+        background-color: #c45050;
+    }
+
+    #ba_logo {
+        width: max(7vw, 7vh);
+    }
+</style>
+<div class="footNavBar">
+    <div>
+        <ul id="footerMenu">
+            <a href="index.html" id="home"><img src="assets/batteryacidLogo.png" alt="Battery Acid" id="ba_logo"></a>
+            <li><a href="store.html" id="shop">Shop</a> </li>
+            <li><a href="aboutPage.html" id="about">About</a></li>
+            <li><a href="careersPage.html" id="careers">Careers</a></li>
+        </ul>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items: center;">
+        <button onclick="scrollToHead()" class="scrollUp">
+            <span class="material-symbols-outlined" style="font-size: min(2vh,2vw);">
+                vertical_align_top
+            </span>Scroll Up</button>
+        <br><br>
+        <a href="terms_and_conditions.html">Terms and Conditions</a>
+    </div>
+</div>
+<hr>
+<div id="information">
+    <p>&copy; 2023 Battery Acid
+        &copy; Better Living Industries. All rights reserved.<br>
+        Contact Us: contact@batteryacid.com</p>
+</div>

@@ -1,0 +1,122 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+    .navBar {
+        display: flex;
+        background-color: #FA7777;
+        color: var(--bg2color);
+        max-height: 10vh;
+        position: fixed;
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .navBar .navBarContent a {
+        color: #1e1e1e;
+        text-decoration: none;
+        /*removes underline */
+        padding: 1vh 2vw 1vh 2vw;
+        border-radius: max(3vw, 2.1vh);
+    }
+
+    .navBar .navBarContent a:hover {
+        color: #ffbbbb;
+        background-color: #c45050;
+    }
+
+    .navBar #logo {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .navBar #home {
+        width: 20%;
+        padding: 1.2% 2% 1.2% 2%;
+    }
+
+    /*  */
+    .menu,
+    .menu-mobile {
+        position: relative;
+        top: 0.4vw;
+        display: flex;
+        list-style: none;
+        font-size: 1.2vw;
+    }
+
+    .menu span {
+        font-size: 1vw;
+    }
+
+    .menu-mobile {
+        display: none;
+        gap: 20px;
+        position: relative;
+    }
+
+    #modeToggleSwitch {
+        position: relative;
+        top: -0.4vw;
+        right: -5vw;
+        width: max(3.56vw, 1.78vh);
+        height: max(2.2vw, 1.1vh);
+        display: block;
+        background: #0a0a0a;
+        border-radius: 3vw;
+        cursor: pointer;
+        /* transition: background 300ms linear; */
+    }
+
+    #modeToggleSwitch:before {
+        position: absolute;
+        width: max(1.4vw, 0.7vh);
+        height: max(1.4vw, 0.7vh);
+        top: max(0.4vw, 0.23vh);
+        transform: translateX(max(0.4vw, 0.1vh));
+        content: "";
+        display: block;
+        background: #6b6b6b;
+        border-radius: 100%;
+        transition: left 300ms linear;
+    }
+
+    #mode_checkbox:checked+#modeToggleSwitch {
+        background: #c2c2c2;
+    }
+
+    #mode_checkbox:checked+#modeToggleSwitch:before {
+        left: 35%;
+        /* background: #dfd99cd2; */
+    }
+</style>
+
+<div class="navBar">
+    <a href="index.html" id="home">
+        <img src="assets/batteryacidLogo.png" alt="Battery Acid" id="logo"> <!-- logo -->
+    </a> <!-- logo links back to the landing page -->
+    <div class="navBarContent">
+        <ul class="menu">
+            <li><a href="store.html" id="shop">
+                    <span class="material-symbols-outlined">storefront</span>Shop</a> </li>
+            <li><a href="aboutPage.html" id="about">
+                    <span class="material-symbols-outlined">info</span>About</a></li>
+            <li><a href="careersPage.html" id="careers">
+                    <span class="material-symbols-outlined">work</span>Careers</a></li>
+            <li><a href="signIn.html" id="signin">
+                    <span class="material-symbols-outlined">login</span>Sign In</a></li>
+            <li>
+                <input type="checkbox" id="mode_checkbox" style="display:none;" onclick="toggleMode()">
+                <label for="mode_checkbox" id="modeToggleSwitch"></label>
+            </li>
+        </ul>
+
+        <ul class="menu-mobile">
+            <li>
+                <img src="assets/menu-icon.svg" alt="navBarMenu">
+            </li>
+        </ul>
+    </div>
+</div>

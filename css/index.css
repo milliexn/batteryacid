@@ -1,0 +1,51 @@
+.product {
+    display: flex;
+    overflow: hidden;
+
+    /* text-align: right; */
+    margin: 1% 0;
+    padding: 0.5%;
+    border: 1px solid var(--bgcolor);
+    box-shadow: 0 0 1% #723232;
+    font-family: 'ITC Avant Garde Gothic', sans-serif;
+    width: 100%;
+}
+
+.product img {
+    width: 100%;
+    object-fit: contain;
+    /* visibility: hidden; */
+    border-radius: 2vh;
+}
+
+.product .banner__overlay {
+    display: inline-block;
+    opacity: 80%;
+    position: absolute;
+    right: calc(2% + 3%);
+    /*padding is 2% */
+    top: auto;
+    padding-top: 2%;
+    left: calc(2% + 3%);
+    color: #fff;
+    line-height: normal;
+}
+
+.product .banner__overlay h1 {
+    font-size: 9vw;
+}
+
+.product .banner__overlay p {
+    font-size: 1.3vw;
+    position: absolute;
+    left: 55%;
+}
+
+.product .banner__overlay a {
+    font-size: 1.5vw;
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: .5% .9%;
+}
